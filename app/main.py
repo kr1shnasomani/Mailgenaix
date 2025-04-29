@@ -40,11 +40,11 @@ def create_streamlit_app(llm, portfolio, clean_text):
                     st.subheader(f"📧 Generated Cold Email for Job {idx}")
                     st.code(email, language='markdown')
 
-                    # ✅ Add Send Email button
+              
                     subject = f"Application: {job.get('title', 'Job Application')}"
                     body_encoded = urllib.parse.quote(email)
                     
-                    # Create a direct mailto link for email clients
+                 
                     mailto_link = f"mailto:recipient@example.com?subject={urllib.parse.quote(subject)}&body={body_encoded}"
                     
 
