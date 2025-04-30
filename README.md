@@ -1,26 +1,30 @@
-# 📧 Cold Mail Generator
-Cold email generator for services company using groq, langchain and streamlit. It allows users to input the URL of a company's careers page. The tool then extracts job listings from that page and generates personalized cold emails. These emails include relevant portfolio links sourced from a vector database, based on the specific job descriptions. 
+<h1 align="center">Mailgenaix</h1>
+<p align="center" style="margin-top:30px;">
+  <img src="https://github.com/user-attachments/assets/e68cb7ff-fbd8-4fa4-ac59-4f22a16952e7" height="250cm"/>
+</p>
+Cold email generator for a services company using Groq, LangChain, and Streamlit. It allows users to input the URL of a company's careers page. The tool then extracts job listings from that page and generates personalized cold emails. These emails include relevant portfolio links, sourced from a vector database, based on the specific job descriptions. 
 
-**Imagine a scenario:**
-
-- Nike needs a Principal Software Engineer and is spending time and resources in the hiring process, on boarding, training etc
-- Atliq is Software Development company can provide a dedicated software development engineer to Nike. So, the business development executive (Mohan) from Atliq is going to reach out to Nike via a cold email.
-
-![img.png](imgs/img.png)
-
-## Architecture Diagram
-![img.png](imgs/architecture.png)
-
-## Set-up
-1. To get started we first need to get an API_KEY from here: https://console.groq.com/keys. Inside `app/.env` update the value of `GROQ_API_KEY` with the API_KEY you created. 
-
-
-2. To get started, first install the dependencies using:
-    ```
-     pip install -r requirements.txt
-    ```
+## Execution Guide:
+1. Clone the repoistory:
+   ```
+   git clone https://github.com/ak8057/Mailgenaix.git
+   cd Mailgenaix
+   ```
    
-3. Run the streamlit app:
+2. Install the dependencies:
+    ```
+    pip install -r requirements.txt
+    ```
+
+3. Configure API key:
+   - Visit **https://console.groq.com/keys** and create an API key.
+   - Create a `.env` file inside the `app/` directory with the following content:
+     ```
+     GROQ_API_KEY=your_api_key_here
+     ```
+     Replace `your_api_key_here` with your actual Groq API key.
+   
+4. Run the Streamlit App:
    ```
    streamlit run app/main.py
    ```
@@ -41,12 +45,12 @@ app/
 │   └── img.png
 │
 ├── vectorstore/
-│   ├── 91ca355b-d93e-43fb-b635-165...
+│   ├── 91ca355b-d93e-43fb-b635-16521af44e52
 │   │   ├── data_level0.bin
 │   │   ├── header.bin
 │   │   ├── length.bin
 │   │   └── link_lists.bin
-│   ├── 9fc860f5-8064-46f0-83d0-b75...
+│   ├── 9fc860f5-8064-46f0-83d0-b75fe3ee6710
 │   │   ├── data_level0.bin
 │   │   ├── header.bin
 │   │   ├── length.bin
