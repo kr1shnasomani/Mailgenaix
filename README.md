@@ -16,11 +16,48 @@ Cold email generator for services company using groq, langchain and streamlit. I
 
 
 2. To get started, first install the dependencies using:
-    ```commandline
+    ```
      pip install -r requirements.txt
     ```
    
 3. Run the streamlit app:
-   ```commandline
+   ```
    streamlit run app/main.py
+   ```
 
+## Repository Structure:
+The structure of the repository is:
+```
+app/
+├── resource/
+│   ├── my_portfolio.csv
+│   ├── chains.py
+│   ├── main.py
+│   ├── portfolio.py
+│   └── utils.py
+│
+├── imgs/
+│   ├── architecture.png
+│   └── img.png
+│
+├── vectorstore/
+│   ├── 91ca355b-d93e-43fb-b635-165...
+│   │   ├── data_level0.bin
+│   │   ├── header.bin
+│   │   ├── length.bin
+│   │   └── link_lists.bin
+│   ├── 9fc860f5-8064-46f0-83d0-b75...
+│   │   ├── data_level0.bin
+│   │   ├── header.bin
+│   │   ├── length.bin
+│   │   └── link_lists.bin
+│   ├── .DS_Store 
+│   └── chroma.sqlite3
+│
+├── .DS_Store 
+├── .gitignore
+├── README.md
+├── email_generator.ipynb
+├── my_portfolio.csv
+└── requirements.txt
+```
