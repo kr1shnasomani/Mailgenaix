@@ -20,9 +20,9 @@ Cold email generator for a services company using Groq, LangChain, and Streamlit
    - Visit **https://console.groq.com/keys** and create an API key.
    - Create a `.env` file inside the `app/` directory with the following content:
      ```
-     GROQ_API_KEY=your_api_key_here
+     GROQ_API_KEY = your_api_key_here
      ```
-     Replace `your_api_key_here` with your actual Groq API key.
+     Note: Replace `your_api_key_here` with your actual Groq API key.
    
 4. Run the Streamlit App:
    ```
@@ -39,11 +39,9 @@ app/
 │   ├── main.py
 │   ├── portfolio.py
 │   └── utils.py
-│
 ├── imgs/
 │   ├── architecture.png
 │   └── img.png
-│
 ├── vectorstore/
 │   ├── 91ca355b-d93e-43fb-b635-16521af44e52
 │   │   ├── data_level0.bin
@@ -57,7 +55,6 @@ app/
 │   │   └── link_lists.bin
 │   ├── .DS_Store 
 │   └── chroma.sqlite3
-│
 ├── .DS_Store 
 ├── .gitignore
 ├── README.md
