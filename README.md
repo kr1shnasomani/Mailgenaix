@@ -32,23 +32,26 @@ Cold email generator for a services company using Groq, LangChain, and Streamlit
 ## Repository Structure:
 The structure of the repository is:
 ```
-app/
-├── resource/
-│   ├── my_portfolio.csv
+Mailgenaix/
+├── app/
+│   ├── resource/
+│   │   └── my_portfolio.csv
+│   ├── .DS_Store
 │   ├── chains.py
 │   ├── main.py
 │   ├── portfolio.py
 │   └── utils.py
 ├── imgs/
+│   ├── .DS_Store
 │   ├── architecture.png
 │   └── img.png
 ├── vectorstore/
-│   ├── 91ca355b-d93e-43fb-b635-16521af44e52
+│   ├── 91ca355b-d93e-43fb-b635-16521af44e52/
 │   │   ├── data_level0.bin
 │   │   ├── header.bin
 │   │   ├── length.bin
 │   │   └── link_lists.bin
-│   ├── 9fc860f5-8064-46f0-83d0-b75fe3ee6710
+│   ├── 9fc860f5-8064-46f0-83d0-b75fe3ee6710/
 │   │   ├── data_level0.bin
 │   │   ├── header.bin
 │   │   ├── length.bin
